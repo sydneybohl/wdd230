@@ -50,21 +50,23 @@ nav a:hover {
     color: #ffffff;
 }
 
-main h2 {
-    text-align: center;
-}
-
-section {
+main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
+main h2 {
+    text-align: center;
+    grid-column: 1/4;
+}
+
 .card {
-    max-width: 700px;
     margin: auto;
     border: 2px solid gray;
     border-radius: 5px;
     margin-bottom: 10px;
+    grid-column: 2/3;
+    width: 500px;
 }
 
 .card h3 {

@@ -1,0 +1,10 @@
+@media screen and (max-width: 899px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    section:nth-child(3) {
+        grid-column: 1/3;
+    }
+}

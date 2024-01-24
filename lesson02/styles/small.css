@@ -1,0 +1,9 @@
+@media screen and (max-width: 599px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        grid-column: 1;
+    }
+}

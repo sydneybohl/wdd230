@@ -1,5 +1,13 @@
 @media screen and (min-width: 600px) {
-    nav ul {
+    #menu {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+    }
+
+    .navigation ul {
         display: flex;
         justify-content: space-evenly;
     }
@@ -14,5 +22,6 @@
 
     .card {
         height: 300px;
+        width: 90%;
     }
 }

@@ -12,6 +12,9 @@ header {
 
 main {
     background-color: #D5E1E9;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
 }
 
 h1,
@@ -26,17 +29,8 @@ p {
     font-family: 'Inter', sans-serif;
 }
 
-#intro,
-#questions,
-#style,
-#wireframe {
-    text-align: center;
-    font-size: 18px;
-    padding: 5px;
-}
-
-#intro,
-#questions {
+#purpose,
+#scenarios {
     border-bottom: 2px solid #92140C;
 }
 

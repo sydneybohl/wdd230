@@ -1,0 +1,46 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    color: white;
+    background-color: #1e1e24;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    background-color: #D5E1E9;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+#intro,
+#questions,
+#style,
+#wireframe {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#intro,
+#questions {
+    border-bottom: 2px solid #92140C;
+}
+
+#wireframe h3 {
+    background-color: #92140C;
+    color: white;
+}

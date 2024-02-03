@@ -1,0 +1,151 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1E1E24;
+    padding: 20px;
+    color: white;
+}
+
+#logo-link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    width: 20%;
+    max-width: 100px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    background-color: #92140C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation a {
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 1rem;
+
+}
+
+.navigation a:hover {
+    background-color: #1E1E24;
+    color: #ffffff;
+}
+
+/* when the button is clicked - the open class is toggled */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+#hero-img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+#hero-msg {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.button-box {
+    text-align: center;
+}
+
+.join {
+    background-color: #92140C;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.join:hover {
+    background-color: #1E1E24;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#weather,
+#events,
+#spotlight-one,
+#spotlight-two,
+#spotlight-three {
+    margin: auto;
+    margin-bottom: 10px;
+    grid-column: 1 / 4;
+    background-color: #D5E1E9;
+    padding: 10px;
+    width: 90%;
+}
+
+#events {
+    margin-top: 10px;
+}
+
+#spotlights {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+footer {
+    background-color: #1E1E24;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

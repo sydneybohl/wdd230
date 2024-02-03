@@ -1,0 +1,9 @@
+@media screen and (min-width: 800px) {
+    #events {
+        grid-column: 1/3;
+    }
+
+    #weather {
+        grid-column: 3/4;
+    }
+}

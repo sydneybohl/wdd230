@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sydney Bohl">
+    <meta name="description" content="Sydney Bohl's Cedarburg Chamber of Commerce Website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <title>WDD 230 - Cedarburg Chamber of Commerce - Sydney Bohl</title>
+</head>
+
+<body>
+    <header>
+        <a id="logo-link" href="index.html">
+            <img class="logo" src="images/CCoClogo.png" alt="#">
+        </a>
+        <h2>Cedarburg</h2>
+        <h2>Chamber of Commerce</h2>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="images/cedarburg.jpg" alt="Cedarburg, Wisconsin Photo">
+        </div>
+        <section id="hero-msg">
+            <div class="button-box">
+                <a class="join" href="#">Join Us!</a>
+            </div>
+        </section>
+    </div>
+    <main>
+        <section id="events">
+            <h2>Events</h2>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+        </section>
+        <section id="spotlights">
+            <h2>Member Spotlights</h2>
+        </section>
+        <section id="spotlight-one">
+            <p>Number One</p>
+        </section>
+        <section id="spotlight-two">
+            <p>Number Two</p>
+        </section>
+        <section id="spotlight-three">
+            <p>Number Three</p>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h4>Cedarburg Chamber of Commerce</h4>
+            <p>Address. Address</p>
+            <p>Email. Email</p>
+            <p>Phone Number</p>
+        </section>
+        <section>
+            <p>&copy;<span id="year"></span></p>
+            <p>Sydney Bohl</p>
+            <p>WDD 230 Project</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hambutton.js"></script>
+</body>
+
+</html>

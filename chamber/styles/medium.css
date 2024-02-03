@@ -3,7 +3,6 @@
         display: none;
     }
 
-
     .navigation a {
         display: block;
     }
@@ -13,20 +12,15 @@
         justify-content: space-evenly;
     }
 
-    .navigation a {
-        display: block;
-    }
-
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    main section:nth-child(2) {
+    #spotlight-one {
         grid-column: 1/2;
     }
 
-    .card {
-        height: 300px;
-        width: 90%;
+    #spotlight-two {
+        grid-column: 2/3;
+    }
+
+    #spotlight-three {
+        grid-column: 3/4;
     }
 }

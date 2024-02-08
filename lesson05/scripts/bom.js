@@ -8,8 +8,12 @@ button.addEventListener("click", () => {
         const li = document.createElement("li");
         const deleteButton = document.createElement("button");
 
+        // capital the first letter of the input value
+        let word = input.value
+        let capWord = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+
         // populate the li elements textContent or innerHTML with the input value
-        li.textContent = input.value;
+        li.textContent = capWord;
 
         deleteButton.textContent = "❌";
 
@@ -31,4 +35,32 @@ button.addEventListener("click", () => {
         input.value = "";
     }
 
+});
+
+// add a function to allow the Enter key to add input to list
+input.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+
+        const li = document.createElement("li");
+        const deleteButton = document.createElement("button");
+
+        let word = input.value
+        let capWord = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+
+        li.textContent = capWord;
+
+        deleteButton.textContent = "❌";
+
+        li.append(deleteButton);
+        list.append(li);
+
+        deleteButton.addEventListener("click", () => {
+            list.removeChild(li);
+            input.focus();
+        });
+
+        input.focus();
+        input.value = "";
+    }
 });

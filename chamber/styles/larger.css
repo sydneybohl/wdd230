@@ -6,4 +6,25 @@
     #weather {
         grid-column: 3/4;
     }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #info {
+        grid-column: 3/4;
+    }
+
+    #copyright {
+        grid-column: 1/2;
+    }
+
+    #project {
+        grid-column: 2/3;
+    }
+
+    #lastMod {
+        grid-column: 3/4;
+    }
 }

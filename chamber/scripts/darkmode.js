@@ -8,7 +8,7 @@ const spot2 = document.querySelector("#spotlight-two");
 const spot3 = document.querySelector("#spotlight-three");
 
 modeButton.addEventListener("click", () => {
-    if (modeButton.textContent.includes("🌑")) {
+    if (modeButton.textContent.includes("🌇")) {
         body.style.background = "#000";
         main.style.color = "#fff";
 
@@ -35,6 +35,6 @@ modeButton.addEventListener("click", () => {
         spot2.style.background = "#D5E1E9"
         spot3.style.background = "#D5E1E9"
 
-        modeButton.textContent = "🌑";
+        modeButton.textContent = "🌇";
     }
 });

@@ -16,7 +16,6 @@ header {
 }
 
 header img {
-    width: 125px;
     grid-column: 1 / 2;
 }
 

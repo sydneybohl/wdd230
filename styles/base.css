@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     font-family: 'Montserrat', Helvetica, sans-serif;
 }
@@ -81,6 +81,15 @@ main {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.hero {
+    grid-column: 1/4;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 main h2 {
     text-align: center;
     grid-column: 1/4;
@@ -92,7 +101,8 @@ main h2 {
     border-radius: 5px;
     margin-bottom: 10px;
     grid-column: 2/3;
-    width: 400px;
+    max-width: 400px;
+    min-width: 330px;
 }
 
 .card h3 {
@@ -113,6 +123,7 @@ main h2 {
 ul {
     padding-left: 20px;
     list-style: none;
+
 }
 
 iframe {

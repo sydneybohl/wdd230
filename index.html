@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <img src="images/mysmallphoto.jpg" alt="Sydney Bohl's Photo">
+        <img src="images/mysmallphoto.webp" alt="Sydney Bohl's Photo">
         <h1>Sydney Bohl</h1>
     </header>
     <button id="menu"></button>
@@ -36,7 +36,12 @@
         </ul>
     </nav>
     <main>
-        <picture></picture>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/chicago-temple-mobile.webp">
+                <img src="images/chicago-temple-large.webp" alt="Chicago Illinois LDS Temple" width="960" height="480">
+            </picture>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>

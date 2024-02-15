@@ -76,13 +76,8 @@ header h1 {
     /* just a wayfinding symbol for the user */
 }
 
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
 .hero {
-    grid-column: 1/4;
+    position: relative;
 }
 
 .hero img {
@@ -90,7 +85,26 @@ main {
     height: auto;
 }
 
-main h2 {
+.hero-msg {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: radial-gradient(#fff, #b1d3ea);
+    border: 1px solid #759ab6;
+}
+
+.hero-msg p {
+    font-size: 1em;
+    padding: 5px;
+    margin: 0;
+}
+
+#main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#main-container h2 {
     text-align: center;
     grid-column: 1/4;
 }

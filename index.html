@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <link rel="icon" href="images/favicon.ico">
-    <title>WDD 230 - Web Frontend Development - Sydney Bohl</title>
+    <title>Sydney Bohl - WDD 230 - Web Frontend Development</title>
 </head>
 
 <body>
@@ -39,38 +39,44 @@
         <div class="hero">
             <picture>
                 <source media="(max-width: 400px)" srcset="images/chicago-temple-mobile.webp">
-                <img src="images/chicago-temple-large.webp" alt="Chicago Illinois LDS Temple" width="960" height="480">
+                <source media="(max-width: 960px)" srcset="images/chicago-temple-large.webp">
+                <img src="images/chicago-temple-large.webp" alt="Chicago Illinois LDS Temple">
             </picture>
+            <div class="hero-msg">
+                <p>Chicago, IL Temple</p>
+            </div>
         </div>
-        <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>01:<a href="#"></a></li>
-                <li>02: <a href="lesson02/design.html">Web Design Practice</a> | <a
-                        href="lesson02/design-principles.html">
-                        Design Principles Document</a></li>
-                <li>03: <a href="images/combinatorspractice.png">Combinators Practice</a> |
-                    <a href="https://codepen.io/sydneybohl/pen/gOEXozM">Psuedo Elements</a> |
-                    <a href="https://codepen.io/sydneybohl/pen/xxBPBRd">Hamburger Menu</a> |
-                    <a href="lesson03/chamber-site-plan.html">Chamber Site-plan</a>
-                </li>
-                <li>04: <a href="https://codepen.io/sydneybohl/pen/ExMQgxv">Pseudo-class Fun</a></li>
-                <li>05: <a href="lesson05/bom.html">BOM Favorites</a></li>
-                <li>06: <a href="lesson05/images/landscape.webp">WedP Photo</a> | <a
-                        href="lesson06/responsive-images.html">Responsive Images</a></li>
-                <li>07:</li>
-                <li>08:</li>
-                <li>09:</li>
-                <li>10:</li>
-            </ul>
-        </section>
-        <section class="card">
-            <h3>Information</h3>
-            <p>Location</p>
-            <p>Weather</p>
-            <p>Number of Page Visits</p>
-        </section>
+        <div id="main-container">
+            <h2>WDD 230: Web Frontend Development</h2>
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>01:<a href="#"></a></li>
+                    <li>02: <a href="lesson02/design.html">Web Design Practice</a> | <a
+                            href="lesson02/design-principles.html">
+                            Design Principles Document</a></li>
+                    <li>03: <a href="images/combinatorspractice.png">Combinators Practice</a> |
+                        <a href="https://codepen.io/sydneybohl/pen/gOEXozM">Psuedo Elements</a> |
+                        <a href="https://codepen.io/sydneybohl/pen/xxBPBRd">Hamburger Menu</a> |
+                        <a href="lesson03/chamber-site-plan.html">Chamber Site-plan</a>
+                    </li>
+                    <li>04: <a href="https://codepen.io/sydneybohl/pen/ExMQgxv">Pseudo-class Fun</a></li>
+                    <li>05: <a href="lesson05/bom.html">BOM Favorites</a></li>
+                    <li>06: <a href="lesson05/images/landscape.webp">WedP Photo</a> | <a
+                            href="lesson06/responsive-images.html">Responsive Images</a></li>
+                    <li>07:</li>
+                    <li>08:</li>
+                    <li>09:</li>
+                    <li>10:</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h3>Information</h3>
+                <p>Location</p>
+                <p>Weather</p>
+                <p>Number of Page Visits</p>
+            </section>
+        </div>
     </main>
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d93442.1057037415!2d-87.94441556110374!3d42.95581770130361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706201478337!5m2!1sen!2sus"

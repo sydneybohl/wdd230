@@ -1,4 +1,17 @@
 @media screen and (min-width: 600px) {
+    #medium-label {
+        display: block;
+        position: relative;
+        bottom: 200px;
+        font-size: 22px;
+        color: white;
+    }
+
+    #small-label,
+    #large-label {
+        display: none;
+    }
+
     #menu {
         display: none;
     }

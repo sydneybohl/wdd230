@@ -95,23 +95,31 @@ header h1 {
     /* just a wayfinding symbol for the user */
 }
 
+/* For my coding with my hero image 
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-}
+    position: relative;
+}*/
 
-#hero-box {
-    grid-column: 1/4;
-    grid-row: 1/4;
-}
-
-#hero-img {
-    display: block;
-    margin: auto;
+.hero img {
     width: 100%;
-    max-width: 800px;
+    height: auto;
 }
 
+#small-label {
+    position: relative;
+    bottom: 125px;
+    font-size: 22px;
+    color: white;
+}
+
+#medium-label,
+#large-label {
+    display: none;
+}
+
+/* For my coding with my hero image 
 #hero-msg {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -133,7 +141,7 @@ header h1 {
 
 .join:hover {
     background-color: #1E1E24;
-}
+}*/
 
 main {
     display: grid;

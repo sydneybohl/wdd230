@@ -1,4 +1,17 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
+    #large-label {
+        display: block;
+        position: relative;
+        bottom: 122px;
+        font-size: 22px;
+        color: white;
+    }
+
+    #small-label,
+    #medium-label {
+        display: none;
+    }
+
     #events {
         grid-column: 1/3;
     }

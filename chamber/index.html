@@ -41,14 +41,26 @@
             <li><a href="#">Join</a></li>
         </ul>
     </nav>
-    <div id="hero">
-        <div id="hero-box">
-            <img id="hero-img" src="images/cedarburg.jpg" alt="Cedarburg, Wisconsin Photo">
+    <div class="hero">
+        <picture>
+            <source srcset="images/wdd230-small.webp" media="(max-width: 576px)">
+            <source srcset="images/wdd230-medium.webp" media="(max-width:816px)">
+            <img src="images/wdd230-large.webp" alt="Chicago Illinois LDS Temple" width="976" height="549">
+        </picture>
+
+        <!--<div id="hero-msg">-->
+        <!--<div class="button-box">-->
+        <!--<a class="join" href="#">Join Us!</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div id="small-label">
+            <p>Small</p>
         </div>
-        <div id="hero-msg">
-            <div class="button-box">
-                <a class="join" href="#">Join Us!</a>
-            </div>
+        <div id="medium-label">
+            <p>Medium</p>
+        </div>
+        <div id="large-label">
+            <p>Large</p>
         </div>
     </div>
     <main>
@@ -60,10 +72,10 @@
         </section>
         <section id="weather">
             <h2>Weather</h2>
-            <p>37°F</p>
-            <p>Sunny</p>
-            <p>Humidity: 87%</p>
-            <p>Wind Chill: N/A</p>
+            <p>Cloudy</p>
+            <p>Temperture: <span id="temperture">33</span>°F</p>
+            <p>Wind Speed: <span id="windSpeed">11</span>mph</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
         </section>
         <section id="spotlights">
             <h2>Member Spotlights</h2>
@@ -109,6 +121,7 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hambutton.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

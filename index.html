@@ -75,20 +75,23 @@
                 <h3>Information</h3>
                 <p>Location</p>
                 <p>Weather</p>
-                <p>Number of Page Visits</p>
+                <p><span class="label">Page Visits: </span>
+                    <span class="visits"></span>
+                </p>
             </section>
         </div>
     </main>
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d93442.1057037415!2d-87.94441556110374!3d42.95581770130361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706201478337!5m2!1sen!2sus"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        referrerpolicy="no-referrer-when-downgrade" title="Google Maps spotlight of the area I live."></iframe>
     <footer>
         <p>&copy;<span id="year"></span><br>Sydney Bohl<br>Wisconsin, USA</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hambutton.js"></script>
+    <script src="scripts/numofvisits.js"></script>
 </body>
 
 </html>

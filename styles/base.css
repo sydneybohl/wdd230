@@ -49,6 +49,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     list-style-type: none;
+
 }
 
 .navigation a {
@@ -58,6 +59,7 @@ header h1 {
     font-size: 20px;
     text-decoration: none;
     padding: 1rem;
+
 }
 
 .navigation a:hover {

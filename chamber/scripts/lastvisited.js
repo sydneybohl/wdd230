@@ -11,12 +11,12 @@ const timeDiff = currentDate.getTime() - lastVisit;
 
 if (lastVisit === 0) {
     displayVisits.textContent = "Welcome! Let us know if you have any questions.";
-} else if (timeDiff <= 0) {
+} else if (timeDiff <= (1000 * 60 * 60 * 24)) {
     displayVisits.textContent = "Back so soon! Awesome!";
 } else {
     const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); // Convert time to amount of days
 
-    if (daysDiff <= 2) {
+    if (daysDiff === 1) {
         displayVisits.textContent = "You last visited 1 day ago.";
     } else {
         displayVisits.textContent = `You last visited ${daysDiff} days ago.`;

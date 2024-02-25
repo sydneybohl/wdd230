@@ -72,4 +72,12 @@
     .column-two {
         grid-column: 3/4;
     }
+
+    .zoom {
+        transition: transform;
+    }
+
+    .zoom:hover {
+        transform: scale(1.1);
+    }
 }

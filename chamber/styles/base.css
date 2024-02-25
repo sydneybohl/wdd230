@@ -227,11 +227,3 @@ footer {
 #visited {
     text-align: center;
 }
-
-.zoom {
-    transition: transform;
-}
-
-.zoom:hover {
-    transform: scale(1.1);
-}

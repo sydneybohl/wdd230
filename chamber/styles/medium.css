@@ -25,15 +25,5 @@
         justify-content: space-evenly;
     }
 
-    #spotlight-one {
-        grid-column: 1/2;
-    }
 
-    #spotlight-two {
-        grid-column: 2/3;
-    }
-
-    #spotlight-three {
-        grid-column: 3/4;
-    }
 }

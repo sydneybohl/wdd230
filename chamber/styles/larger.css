@@ -12,11 +12,28 @@
         display: none;
     }
 
+    #homepage-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     #events {
         grid-column: 1/3;
     }
 
     #weather {
+        grid-column: 3/4;
+    }
+
+    #spotlight-one {
+        grid-column: 1/2;
+    }
+
+    #spotlight-two {
+        grid-column: 2/3;
+    }
+
+    #spotlight-three {
         grid-column: 3/4;
     }
 
@@ -38,6 +55,21 @@
     }
 
     #lastMod {
+        grid-column: 3/4;
+    }
+
+    #discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: auto;
+    }
+
+    .column-one {
+        grid-column: 1/2;
+    }
+
+    .column-two {
         grid-column: 3/4;
     }
 }

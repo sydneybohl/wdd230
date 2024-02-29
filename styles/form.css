@@ -1,0 +1,64 @@
+:root {
+    --color-black: black;
+    --block-display: block;
+    --width-percent: 75%;
+    --radius: 6px;
+}
+
+.webform {
+    display: var(--block-display);
+    padding: 1em;
+    border: 1px solid var(--color-black);
+}
+
+fieldset {
+    border: none;
+}
+
+.webform label {
+    display: var(--block-display);
+    font-size: 1rem;
+    padding: .5rem;
+    width: var(--width-percent);
+    max-width: 500px;
+}
+
+.webform input[type="text"],
+.webform input[type="password"],
+.webform input[type="email"] {
+    background-color: #e7f0fa;
+    display: var(--block-display);
+    border: solid 1px var(--color-black);
+    border-radius: var(--radius);
+    padding: .75rem;
+    width: var(--width-percent);
+    max-width: 500px;
+}
+
+#pwdmessage {
+    padding: 0.5em;
+    color: red;
+}
+
+#rangeValue {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#range {
+    padding: 0;
+    margin-right: .75rem;
+    width: 50%;
+}
+
+.webform input[type="submit"] {
+    border: none;
+    background-color: #1b274b;
+    color: white;
+    border-radius: var(--radius);
+    padding: .7rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem -10px 1rem 8px;
+}

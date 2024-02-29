@@ -41,14 +41,15 @@ fieldset {
 }
 
 #rangeValue {
+    padding-left: 8px;
     padding-bottom: 10px;
-    padding-top: 10px;
 }
 
 #range {
-    padding: 0;
-    margin-right: .75rem;
-    width: 50%;
+    display: block;
+    margin-left: .50rem;
+    width: 70%;
+    max-width: 400px;
 }
 
 .webform input[type="submit"] {

@@ -280,14 +280,6 @@ textarea {
 
 }
 
-input:required {
-    border-right: 3px solid red;
-}
-
-input:required:valid {
-    border-right: 3px solid green;
-}
-
 #right-container {
     padding-top: 29px;
 }
@@ -315,4 +307,9 @@ input:required:valid {
     margin-top: 1.2em;
     width: 75%;
     max-width: 20rem;
+}
+
+.thankyou {
+    text-align: center;
+    padding: 5rem;
 }

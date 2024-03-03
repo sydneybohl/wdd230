@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Cedarburg Chamber of Commerce Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sydneybohl.github.io/wdd230/chamber/images/cedarburg.jpg">
+    <meta property="og:url" content="https://sydneybohl.github.io/wdd230/chamber/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sydney Bohl">
+    <meta name="description" content="Sydney Bohl's Cedarburg Chamber of Commerce Website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <title>WDD 230 - Cedarburg Chamber of Commerce - Sydney Bohl</title>
+</head>
+
+<body>
+    <div id="mode">
+        🌇
+    </div>
+    <header>
+        <a id="logo-link" href="index.html">
+            <img class="logo" src="images/CCoClogo.png" alt="#">
+        </a>
+        <h1>Cedarburg <br>Chamber of Commerce</h1>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="join-title">Membership Application</h1>
+        <div id="main-container">
+            <form method="get" action="thankyou.html" class="webform">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label for="firstName">First Name*<input type="text" id="firstName" name="firstName" required
+                            title="Enter your first name."></label>
+                    <label for="lastName">Last Name* <input type="text" id="lastName" name="lastName" required
+                            title="Enter your last name."></label>
+                    <label for="title">Title/Position* <input type="text" id="title" name="title" required
+                            pattern="[A-Za-z\s\-0-9]{7,}"
+                            title="Title must be minimum 7 characters long and can only contain alphanumeric characters, hypens, and spaces."></label>
+                    <label for="email">Email* <input type="email" id="email" name="email"
+                            placeholder="someone@gmail.com" required title="Enter a valid email address."></label>
+                    <label for="phoneNumber">Mobile Phone* <input type="tel" id="phone" name="phone" required
+                            placeholder="2621234567" title="A valid phone number."></label>
+                    <label for="business">Business/Organization's Name*<input type="text" id="business" name="business"
+                            required title="Enter your business or organization's name."></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="radio"><input type="radio" name="membership" value="non-profit">Free
+                        Membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="bronze">Bronze
+                        Membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="silver">Silver
+                        Membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="gold">Gold
+                        Membership</label>
+
+                    <label for="business-description">Business/Organization's Description</label>
+                    <textarea name="businessDescription" id="business-description" rows="5" cols="50"
+                        placeholder="Enter a short description of your business or organization."></textarea>
+                    <input type="hidden" name="time-stamp" id="time-stamp">
+                </fieldset>
+                <input type="submit" value="Complete Membership" class="submitButton">
+            </form>
+            <div id="right-container">
+                <section class="membership">
+                    <h2>Membership Plan Information</h2>
+                </section>
+                <section class="free-plan">
+                    <h3>Free Membership</h3>
+                    <p class="cost">Cost: Free</p>
+                    <ul class="benefits">
+                        <li>Access to Chamber of Commerce events and networking opportunities.</li>
+                        <li>Listing in the Chamber's online directory.</li>
+                        <li>Stay informed with monthly newsletters.</li>
+                        <li>Access to educational resources and workshops.</li>
+                    </ul>
+                </section>
+                <section class="bronze-plan">
+                    <h3>Bronze Membership</h3>
+                    <p class="price">Cost: $250 per year</p>
+                    <ul class="benefits">
+                        <li>All Free Membership benefits, plus:</li>
+                        <li>Discounted rates on Chamber-sponsored events and workshops.</li>
+                        <li>One featured spotlight position on the Chamber's website per year.</li>
+                        <li>Access to Chamber's social media promotion for events or initiatives.</li>
+                        <li>Quarterly newsletter feature highlighting Bronze Members.</li>
+                    </ul>
+                </section>
+                <section class="silver-plan">
+                    <h3>Silver Membership</h3>
+                    <p class="price">Cost: $500 per year</p>
+                    <ul class="benefits">
+                        <li>All Bronze Membership benefits, plus:</li>
+                        <li>Priority placement in the Chamber's online directory.</li>
+                        <li>Two featured spotlight positions on the Chamber's website per year.</li>
+                        <li>Complimentary admission to quarterly networking events.</li>
+                        <li>Additional discounts on advertising opportunities through the Chamber.</li>
+                    </ul>
+                </section>
+                <section class="gold-plan">
+                    <h3>Gold Membership</h3>
+                    <p class="price">Cost: $1,000 per year</p>
+                    <ul class="benefits">
+                        <li>All Silver Membership benefits, plus:</li>
+                        <li>Highest priority placement in the Chamber's online directory.</li>
+                        <li>Four featured spotlight positions on the Chamber's website per year.</li>
+                        <li>Exclusive invitation to VIP events and receptions hosted by the Chamber.</li>
+                        <li>Priority consideration for speaking opportunities at Chamber Events.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <h3>Cedarburg Chamber of Commerce</h3>
+            <p>N58 W6194 Columbia Rd, Cedarburg, WI 53012</p>
+        </section>
+        <div id="info">
+            <p>info@cedarburgcoc.org</p>
+            <p>+1 (262) 123-4567</p>
+        </div>
+        <div id="copyright">
+            <p>&copy;<span id="year"></span> | Sydney Bohl</p>
+        </div>
+        <div id="project">
+            <p>WDD 230 Project</p>
+        </div>
+        <div id="lastMod">
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hambutton.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>

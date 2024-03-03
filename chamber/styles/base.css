@@ -11,7 +11,6 @@ body {
     cursor: pointer;
 }
 
-
 h1,
 h2,
 h3 {
@@ -95,53 +94,33 @@ header h1 {
     /* just a wayfinding symbol for the user */
 }
 
-/* For my coding with my hero image 
+/* For my coding with my hero image */
 #hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    position: relative;
-}*/
+    display: flex;
+    justify-content: center;
+}
 
-.hero img {
+#hero img {
     width: 100%;
     height: auto;
+
 }
 
-#small-label {
-    position: relative;
-    bottom: 125px;
-    font-size: 22px;
-    color: white;
-}
+/* For my coding with my hero */
 
-#medium-label,
-#large-label {
-    display: none;
-}
-
-/* For my coding with my hero image 
-#hero-msg {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-.button-box {
-    text-align: center;
-}
-
-.join {
+button {
+    position: absolute;
+    top: 20em;
     background-color: #92140C;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
+    padding: 25px;
+    color: white;
+    border: none;
+    border-radius: 6px;
 }
 
 .join:hover {
     background-color: #1E1E24;
-}*/
+}
 
 #homepage-grid {
     display: block;
@@ -226,4 +205,106 @@ footer {
 
 #visited {
     text-align: center;
+}
+
+/* JOIN PAGE */
+
+#main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 35px;
+}
+
+.join-title {
+    text-align: center;
+    padding: 10px;
+}
+
+.webform fieldset {
+    padding-left: 3em;
+    border: 3px solid #1E1E24;
+    width: 75%;
+}
+
+label,
+input,
+textarea {
+    display: block;
+}
+
+legend {
+    padding: .7em;
+    margin: 0;
+    color: black;
+    font-size: 1.5em;
+}
+
+.webform label {
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin: .5rem;
+    max-width: 400px;
+}
+
+.webform input {
+    background-color: #e7f0fa;
+    border: solid 1px black;
+    padding: .75rem;
+    margin: .75rem .05rem;
+    width: 90%;
+}
+
+.webform input[type="text"],
+.webform input[type="email"],
+.webform input[type="tel"],
+.webform input[type="radio"] {
+    font-size: 1.2em;
+    color: black;
+}
+
+textarea {
+    width: 100%;
+    min-height: 70px;
+    padding-left: 5px;
+    max-width: 25em;
+    font-size: 1.2em;
+    resize: vertical;
+    margin: 1rem;
+}
+
+.webform input[type="submit"] {
+    border: none;
+    background-color: pink;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: .25em;
+    margin-top: .5em;
+    margin-left: 1em;
+    width: 50%;
+    max-width: 20rem;
+}
+
+.webform input[type="radio"] {
+    height: 20px;
+    width: 20px;
+}
+
+input:required {
+    border-right: 3px solid red;
+}
+
+input:required:valid {
+    border-right: 3px solid green;
+}
+
+.free-plan,
+.bronze-plan,
+.silver-plan,
+.gold-plan {
+    border: 1px solid #1E1E24;
+    background-color: #D5E1E9;
+    font-size: 18px;
+    width: 90%;
+    padding: .75rem;
+    margin-bottom: 20px;
 }

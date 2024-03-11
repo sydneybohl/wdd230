@@ -1,0 +1,109 @@
+{
+    "members": [
+        {
+            "name": "Hampton Inn & Suites",
+            "address": "2633 Washington Street",
+            "city_state": "Grafton, WI",
+            "phone": "(262)474-1000",
+            "website": "https://www.graftonsuites.hamptoninn.com",
+            "image": [
+                {
+                    "src": "https://sydneybohl.github.io/wdd230/chamber/images/hamptoninn.webp",
+                    "alt": "Hampton Inn & Suites Logo"
+                }
+            ],
+            "membership": "Gold",
+            "description": "The Hampton Inn & Suites hotel offers friendly service, comfortable accommodations and free WiFi."
+        },
+        {
+            "name": "PartsBadger",
+            "address": "W66N205 Commerce Court",
+            "city_state": "Cedarburg, WI 53012",
+            "phone": "(331)223-4378",
+            "website": "https://parts-badger.com/",
+            "image": [
+                {
+                    "src": "https://sydneybohl.github.io/wdd230/chamber/images/partsbadger.webp",
+                    "alt": "PartsBadger Logo"
+                }
+            ],
+            "membership": "Silver",
+            "description": "PartsBadger is an online, custom machine part supplier. PartsBadger simplifies the process of ordering custom machined parts. "
+        },
+        {
+            "name": "Wisconsin Humane Society: Ozaukee Campus",
+            "address": "630 W. Dekora Street",
+            "city_state": "Suakville, WI 53080",
+            "phone": "(262)988-5945",
+            "website": "https://www.wihumane.org/",
+            "image": [
+                {
+                    "src": "https://sydneybohl.github.io/wdd230/chamber/images/WiHumaneSocietyOzaukee",
+                    "alt": "Wisconsin Humane Society Ozaukee Campus Logo"
+                }
+            ],
+            "membership": "Non-Profit",
+            "description": "The Wisconsin Humane Society is an independant nonprofit organization that has been saving lives of animals in need for over 145 years."
+        },
+        {
+            "name": "Festivals of Cedarburg",
+            "address": "W63N643 Washington Ave.",
+            "city_state": "Cedarburg, WI 53012",
+            "phone": "(262) 377-3891",
+            "website": "http://www.cedarburgfestivals.org/",
+            "image": [
+                {
+                    "src": "https://sydneybohl.github.io/wdd230/chamber/images/festivals.webp",
+                    "alt": "Festivals of Cedarburg Logo"
+                }
+            ],
+            "membership": "Non-Profit",
+            "description": "Festivals of Cedarburg is a non-profit organization that has been engaging businesses, communites, and non-profits to create best-in-class events and festivals."
+        },
+        {
+            "name": "Hometown Heating, Air & Electric",
+            "address": "N52W5338 Portland Road",
+            "city_state": "Cedarburg, WI 53012",
+            "phone": "(262) 510-2215",
+            "website": "http://www.yourhometownheating.com/",
+            "image": [
+                {
+                    "src": "https://sydneybohl.github.io/wdd230/chamber/images/hometownheat.webp",
+                    "alt": "Hometown Heating, Air & Electric Logo"
+                }
+            ],
+            "membership": "Bronze",
+            "description": "Hometown Heating, Air & Electric is a full-service in-home heating, cooling, and electric provider."
+        },
+        {
+            "name": "Stagecoach Inn",
+            "address": "W61N520 Washington Ave.",
+            "city_state": "Cedarburg, WI 53012",
+            "phone": "(262) 375-0208",
+            "website": "http://www.stagecoach-inn-wi.com/",
+            "image": [
+                {
+                    "src": "https://sydneybohl.github.io/wdd230/chamber/images/stagecoachinn.webp",
+                    "alt": "Stagecoach Inn Logo"
+                }
+            ],
+            "membership": "Bronze",
+            "description": "Stagecoach Inn is a historic bed and breakfast, right in the middle of everything Cedarburg."
+        },
+        {
+            "name": "YogaOne Studio",
+            "address": "W61N397A Washington Ave.",
+            "city_state": "Cedarburg, WI 53012",
+            "phone": "(262) 376-9642",
+            "website": "https://www.yogaonestudio.com/",
+            "image": [
+                {
+                    "src": "https://sydneybohl.github.io/wdd230/chamber/images/yogaone.webp",
+                    "alt": "YogaOne Studio Logo"
+                }
+            ],
+            "membership": "Bronze",
+            "description": "YogaOne Studio offers a variety of yoga classes with highly trained yoga teachers."
+        }
+    ]
+}

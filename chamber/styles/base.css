@@ -108,7 +108,7 @@ header h1 {
 
 /* For my coding with my hero */
 
-button {
+#button {
     position: absolute;
     top: 20em;
     background-color: #92140C;
@@ -312,4 +312,83 @@ textarea {
 .thankyou {
     text-align: center;
     padding: 5rem;
+}
+
+/* DIRECTORY PAGE */
+.directory {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+#gridButton,
+#listButton {
+    background-color: #92140C;
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    /* Add some margin between the buttons */
+}
+
+.directory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.directory-grid section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    border: #D5E1E9 solid 1px;
+    background-color: #D5E1E9;
+}
+
+.directory-grid p {
+    margin-bottom: .5em;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.directory-grid a {
+    margin: 1em;
+    font-size: 1em;
+}
+
+/* Styles for List View */
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 7px;
+    margin: 0;
+}
+
+.list section img,
+.list section p:not(:nth-child(2)) {
+    display: none;
+}
+
+.list section h2 {
+    text-align: center;
+    font-size: 1em;
+}
+
+.list section:nth-child(even) {
+    background-color: #D5E1E9;
 }

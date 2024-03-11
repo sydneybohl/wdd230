@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <link rel="icon" href="images/favicon.ico">
-    <title>WDD 230 - Cedarburg Chamber of Commerce: Thank You</title>
+    <title>WDD 230 - Cedarburg Chamber of Commerce: Directory</title>
 </head>
 
 <body>
@@ -37,14 +37,17 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html" class="active">Join</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
     <main>
-        <h2 class="thankyou">Membership Application Completed!</h2>
-        <h3 class="thankyou">Thank you for joining Cedarburg's Chamber of Commerce and helping us build a stronger
-            community.</h3>
+        <h1 class="directory">Cedarburg Chamber of Commerce: Directory</h1>
+        <div class="toggle">
+            <button id="gridButton">Grid View</button>
+            <button id="listButton">List View</button>
+        </div>
+        <article class="directory-grid"></article>
     </main>
     <footer>
         <section>
@@ -68,7 +71,8 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hambutton.js"></script>
-    <script src="scripts/join.js"></script>
+    <script src="scripts/members.js"></script>
+    <script src="scripts/toggle.js"></script>
 </body>
 
 </html>

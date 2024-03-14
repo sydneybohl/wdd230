@@ -136,6 +136,10 @@ header h1 {
     text-align: center;
 }
 
+#weather {
+    text-align: center;
+}
+
 ul {
     padding-left: 20px;
     list-style: none;

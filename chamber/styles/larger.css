@@ -103,4 +103,12 @@
         display: inline-block;
     }
 
+    #weather-forecast img,
+    #current-weather img {
+        display: block;
+    }
+
+    #weather-forecast img {
+        justify-self: center;
+    }
 }

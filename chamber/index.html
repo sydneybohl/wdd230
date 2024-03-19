@@ -41,6 +41,11 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
+    <div id="alert-banner">
+        <p>ATTENTION! All vistors and users are welcome to attend Cedarburg Chamber of
+            Commerce's Meet and Greet event on Wednesday at 7:00 p.m. <span id="close-banner">❌</span></p>
+        </p>
+    </div>
     <div id="hero">
         <picture>
             <source srcset="images/cedarburg-photo-500.webp" media="(max-width: 600px)">
@@ -59,10 +64,18 @@
             </section>
             <section id="weather">
                 <h2>Weather</h2>
-                <p>Cloudy</p>
-                <p>Temperture: <span id="temperture">33</span>°F</p>
-                <p>Wind Speed: <span id="windSpeed">11</span>mph</p>
-                <p>Wind Chill: <span id="windChill"></span></p>
+                <h3>Current Temperature</h3>
+                <div id="current-weather">
+                    <p><span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="https://via.placeholder.com/55" alt="Today's Weather Conditions">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>Wind Speed: <span id="windspeed"></span> mph</p>
+                    <p>Wind Chill: <span id="windchill"></span>&deg;F</p>
+                </div>
+                <h4>Weather Forecast</h4>
+                <div id="weather-forecast"></div>
             </section>
             <section id="spotlights">
                 <h2>Member Spotlights</h2>
@@ -109,7 +122,9 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hambutton.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/forecast.js"></script>
 </body>
 
 </html>

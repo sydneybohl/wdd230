@@ -392,3 +392,62 @@ textarea {
 .list section:nth-child(even) {
     background-color: #D5E1E9;
 }
+
+/* Home Page Banner */
+#alert-banner {
+    display: none;
+    position: relative;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #D5E1E9;
+}
+
+#close-banner {
+    padding-left: 10px;
+}
+
+/* Weather Data for Home Page */
+#weather {
+    text-align: center;
+}
+
+#current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather-forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather-forecast p,
+#current-weather p,
+#weather-forecast figure,
+#current-weather figure {
+    margin: 0;
+    text-align: center;
+}
+
+#weather-forecast img,
+#current-weather img {
+    display: none;
+    width: 55px;
+    height: auto;
+    margin: auto;
+}
+
+#weather-forecast figure,
+#weather-forecast p {
+    font-size: .8rem;
+    padding: 5px 10px;
+}
+
+#current-weather figure,
+#current-weather p {
+    padding: 8px;
+}

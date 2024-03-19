@@ -9,8 +9,8 @@ async function apiFetchFuture() {
         // output results to the console for testing
         if (response.ok) {
             const forecastData = await response.json();
-            // console.log(forecastData); // testing only 
             displayResults(forecastData); // Corrected function name
+            console.log(forecastData); // testing only 
         } else {
             // else, throw error using response.text()
             throw Error(await response.text());
@@ -24,13 +24,13 @@ async function apiFetchFuture() {
 // call fucntion to fetch future forecast data
 apiFetchFuture();
 
-function displayResults(forecastData) {
+function displayResults(data) {
     // loop through each forecast data day 
-    for (let i = 0; i < forecastData.list.length; i++) {
+    for (let i = 0; i < data.list.length; i++) {
         // create div element for each forecast data day 
         const div = document.createElement("div");
         // obtain forecast data
-        const forecast = forecastData.list[i];
+        const forecast = data.list[i];
         // check if time sets for the next day
         if (forecast.dt_txt.includes("21:00")) {
             // creates divs to display temperature, date, icon, and weather description

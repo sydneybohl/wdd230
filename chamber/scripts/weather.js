@@ -1,11 +1,9 @@
-// weather input to chamber home page
+// weather input to course home page
 
 // select HTML elements in the document 
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
-const windSpeed = document.querySelector("#windspeed");
-const windChill = document.querySelector("#windchill");
 
 // const variable named "url" and assign it with valid URL of openweathermap api 
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=43.30&lon=-87.99&units=imperial&appid=7d1799cb656dd7ec926774e34069fc68";

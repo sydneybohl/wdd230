@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta property="og:title" content="Cedarburg Chamber of Commerce Project">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://sydneybohl.github.io/wdd230/chamber/images/cedarburg.jpg">
     <meta property="og:url" content="https://sydneybohl.github.io/wdd230/chamber/index.html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="author" content="Sydney Bohl">
     <meta name="description" content="Sydney Bohl's Cedarburg Chamber of Commerce Website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +30,7 @@
     </div>
     <header>
         <a id="logo-link" href="index.html">
-            <img class="logo" src="images/CCoClogo.png" alt="#">
+            <img class="logo" src="images/ccoclogo.png" alt="Cedarburg Chamber of Commerce Logo">
         </a>
         <h1>Cedarburg <br>Chamber of Commerce</h1>
     </header>
@@ -44,23 +46,32 @@
     <div id="alert-banner">
         <p>ATTENTION! All vistors and users are welcome to attend Cedarburg Chamber of
             Commerce's Meet and Greet event on Wednesday at 7:00 p.m. <span id="close-banner">❌</span></p>
-        </p>
     </div>
     <div id="hero">
         <picture>
             <source srcset="images/cedarburg-photo-500.webp" media="(max-width: 600px)">
-            <img src="images/cedarburg-photo.webp" alt="Cream Brick Cedarburg Building" width="800" height="493">
+            <img src="images/cedarburg-photo.webp" alt="Cream Brick Cedarburg Building" width="1000" height="616.25">
         </picture>
-
-        <button type="button" id="button">Join Us!</button>
+        <button type="button" id="button" onclick="document.location='join.html'">Join Us!</button>
     </div>
     <main>
         <div id="homepage-grid">
             <section id="events">
                 <h2>Events</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>March 23: Easter Egg Hunt! All children 10 and under are invited to participate in the Easter Egg
+                    Hunt. Admission is free. Event starts at 10 am SHARP! Come join us!</p>
+                <p>April 3: Bake Sale Funraiser! Come and support the South Cedarburg's High School baseball team by
+                    picking up some tasty treats!</p>
+                <p>April 4: CHAMBER - Morning Meet-Ups! From 7:45-9:00 am, join us for coffee and conversation!</p>
+                <p>April 18: CHAMBER - Business After Hours! From 5:00-6:30 pm, meet and engage with fellow chamber
+                    members in casual conversations.</p>
+                <p>April 19: Let's Roll Pizza Grand Opening! Come check out and support Let's Roll Pizza!</p>
+                <p>May 2: CHAMBER - Morning Meet-Ups! From 7:45-9:00 am, join us for coffee and conversation!</p>
+                <p>May 3-5: Cedarburg Children's Theater Presents "Charlie and the Chocolate Factory"</p>
+                <p>June 6: CHAMBER - Morning Meet-Ups! From 7:45-9:00 am, join us for coffee and conversation!</p>
+                <p>June 22-23: Annual Strawberry Festival! Located in Historic Cedarburg, come and enjoy everything
+                    strawberry! Chamber members register now!</p>
+
             </section>
             <section id="weather">
                 <h2>Weather</h2>
@@ -81,22 +92,16 @@
                 <h2>Member Spotlights</h2>
             </section>
             <section id="spotlight-one">
-                <h3>Number One</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>GOLD MEMBER</h3>
+                <div id="gold-member"></div>
             </section>
             <section id="spotlight-two">
-                <h3>Number Two</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>SILVER MEMBER</h3>
+                <div id="silver-member"></div>
             </section>
             <section id="spotlight-three">
-                <h3>Number Three</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>BRONZE MEMBER</h3>
+                <div id="bronze-member"></div>
             </section>
         </div>
     </main>
@@ -125,6 +130,7 @@
     <script src="scripts/banner.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/forecast.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 
 </html>

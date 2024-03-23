@@ -1,6 +1,7 @@
 body {
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
+    background-color: #1E1E24;
 }
 
 #mode {
@@ -9,6 +10,22 @@ body {
     right: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+/* Dark mode styles */
+body.darkmode {
+    background-color: black;
+    color: white;
+}
+
+.darkmode-section {
+    background-color: black;
+    color: black;
+    border: 1px solid #fff;
+}
+
+.darkmode-link {
+    color: #fff;
 }
 
 h1,
@@ -62,11 +79,13 @@ header h1 {
     background-color: #92140C;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .navigation ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .navigation a {
@@ -103,6 +122,7 @@ header h1 {
 #hero img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 
 }
 
@@ -110,15 +130,15 @@ header h1 {
 
 #button {
     position: absolute;
-    top: 20em;
+    top: 30em;
     background-color: #92140C;
-    padding: 25px;
+    padding: 10px;
     color: white;
     border: none;
     border-radius: 6px;
 }
 
-.join:hover {
+#button:hover {
     background-color: #1E1E24;
 }
 
@@ -137,20 +157,33 @@ header h1 {
     margin-bottom: 10px;
     background-color: #D5E1E9;
     padding: 10px;
+    border-radius: 10px;
     width: 90%;
 }
 
 #events {
     margin-top: 10px;
+    width: 95%;
+}
+
+#events h2 {
+    text-align: center;
 }
 
 #spotlights {
+    color: white;
     grid-column: 1 / 4;
     text-align: center;
 }
 
+#spotlight-one h3,
+#spotlight-two h3,
+#spotlight-three h3 {
+    text-align: center;
+}
+
 footer {
-    background-color: #1E1E24;
+    background-color: #92140C;
     color: white;
     margin-top: 20px;
     display: flex;
@@ -163,6 +196,7 @@ footer {
 .discover-title {
     display: block;
     text-align: center;
+    color: white;
 }
 
 #visited,
@@ -178,6 +212,7 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #D5E1E9;
+    border-radius: 10px;
     font-size: 18px;
     padding: 10px;
     width: 90%;
@@ -197,6 +232,7 @@ footer {
 #discover-grid img {
     width: 90%;
     height: auto;
+    border-radius: 10px;
 }
 
 #discover-grid h2 {
@@ -212,18 +248,23 @@ footer {
 #main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 65px;
 }
 
 .join-title {
     text-align: center;
     padding: 10px;
+    color: white;
 }
 
 .webform fieldset {
     padding-left: 3em;
-    border: 3px solid #1E1E24;
+    border: 3px solid #D5E1E9;
+    background-color: #D5E1E9;
+    border-radius: 10px;
     width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    /* Center the fieldset */
 }
 
 label,
@@ -235,7 +276,9 @@ textarea {
 legend {
     padding: .7em;
     margin: 0;
-    color: black;
+    color: white;
+    border-radius: 6px;
+    background-color: #92140C;
     font-size: 1.5em;
 }
 
@@ -243,7 +286,7 @@ legend {
     font-size: 1.2rem;
     padding: .5rem;
     margin: .5rem;
-    max-width: 400px;
+    max-width: 90%;
 }
 
 .webform input {
@@ -252,6 +295,14 @@ legend {
     padding: .75rem;
     margin: .75rem .05rem;
     width: 90%;
+}
+
+.webform input,
+.webform textarea {
+    width: 90%;
+    /* Changed to percentage for responsiveness */
+    max-width: 100%;
+    /* Added max-width to prevent overflow */
 }
 
 .webform input[type="text"],
@@ -291,8 +342,10 @@ textarea {
     border: 1px solid #1E1E24;
     background-color: #D5E1E9;
     font-size: 1.2rem;
-    width: 90%;
-    padding: 1rem;
+    width: 95%;
+    padding: 10px;
+    align-self: center;
+    border-radius: 10px;
     margin-bottom: 30px;
 }
 
@@ -314,10 +367,15 @@ textarea {
     padding: 5rem;
 }
 
+#main-container {
+    display: block;
+}
+
 /* DIRECTORY PAGE */
 .directory {
     text-align: center;
     padding-bottom: 20px;
+    color: white;
 }
 
 .toggle {
@@ -351,6 +409,7 @@ textarea {
     padding: 2em;
     border: #D5E1E9 solid 1px;
     background-color: #D5E1E9;
+    border-radius: 10px;
 }
 
 .directory-grid p {

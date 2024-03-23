@@ -1,15 +1,7 @@
 @media screen and (min-width: 850px) {
-    #large-label {
+    .navigation a {
         display: block;
-        position: relative;
-        bottom: 122px;
-        font-size: 22px;
-        color: white;
-    }
-
-    #small-label,
-    #medium-label {
-        display: none;
+        margin: 0;
     }
 
     #homepage-grid {
@@ -79,6 +71,15 @@
 
     .zoom:hover {
         transform: scale(1.1);
+    }
+
+    #main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 5%;
+        /* Changed to percentage for responsiveness */
+        padding-right: 5%;
+        /* Added for better spacing */
     }
 
     .list {

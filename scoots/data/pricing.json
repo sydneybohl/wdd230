@@ -1,0 +1,76 @@
+{
+    "Rental": [
+        {
+            "Vehicle": "Honda Metro Scooter",
+            "MaxPersons": 1,
+            "Reservation": {
+                "HalfDay (3hrs)": "$20",
+                "FullDay": "$30"
+            },
+            "Walk-In": {
+                "HalfDay (3hrs)": "$25",
+                "FullDay": "$35"
+            }
+        },
+        {
+            "Vehicle": "Honda Dio Scooter",
+            "MaxPersons": 2,
+            "Reservation": {
+                "HalfDay (3hrs)": "$30",
+                "FullDay": "$40"
+            },
+            "Walk-In": {
+                "HalfDay (3hrs)": "$35",
+                "FullDay": "$45"
+            }
+        },
+        {
+            "Vehicle": "Honda PCX150 Scooter",
+            "MaxPersons": 2,
+            "Reservation": {
+                "HalfDay (3hrs)": "$40",
+                "FullDay": "$50"
+            },
+            "Walk-In": {
+                "HalfDay (3hrs)": "$45",
+                "FullDay": "$55"
+            }
+        },
+        {
+            "Vehicle": "Honda Pioneer ATV",
+            "MaxPersons": 4,
+            "Reservation": {
+                "HalfDay (3hrs)": "$50",
+                "FullDay": "$70"
+            },
+            "Walk-In": {
+                "HalfDay (3hrs)": "$60",
+                "FullDay": "$80"
+            }
+        },
+        {
+            "Vehicle": "Jeep Wrangler - 4 door with a/c",
+            "MaxPersons": 5,
+            "Reservation": {
+                "HalfDay (3hrs)": "$70",
+                "FullDay": "$100"
+            },
+            "Walk-In": {
+                "HalfDay (3hrs)": "$85",
+                "FullDay": "$125"
+            }
+        },
+        {
+            "Vehicle": "Jeep Wrangler - 2 door",
+            "MaxPersons": 4,
+            "Reservation": {
+                "HalfDay (3hrs)": "$60",
+                "FullDay": "$85"
+            },
+            "Walk-In": {
+                "HalfDay (3hrs)": "$70",
+                "FullDay": "$90"
+            }
+        }
+    ]
+}

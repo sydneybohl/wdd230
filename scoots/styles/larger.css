@@ -1,0 +1,18 @@
+@media screen and (min-width: 1050px) {
+
+    #weather-forecast img,
+    #current-weather img {
+        display: block;
+    }
+
+    #weather-forecast img {
+        justify-self: center;
+    }
+
+    .reservations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+}

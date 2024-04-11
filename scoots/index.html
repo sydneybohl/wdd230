@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Scoots Final Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sydneybohl.github.io/wdd230/scoots/images/scooter-rental.webp">
+    <meta property="og:url" content="https://sydneybohl.github.io/wdd230/scoots/index.html">
+
+    <meta name="author" content="Sydney Bohl">
+    <meta name="description" content="Scoots, a rental shop in Cozumel, Mexico.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <title>WDD 230 | Scoots | Sydney Bohl</title>
+</head>
+
+<body>
+    <div id="alert-banner">
+        <p>Today's Expected High: <span id="max-high"></span></p><span id="close-banner">❌</span>
+    </div>
+    <header>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a id="logo-link" href="index.html">
+                <img class="logo" src="images/scoots-logo.png" alt="Scoots Logo">
+            </a>
+            <a href="index.html" class="active">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Scoots Rentals!</h1>
+        <hr>
+        <section class="home-text">
+            <p>Scoots Rentals is the best motor scooter rental company located on the island of Cozumel. We are a
+                owner-operated company that caters to locals, walk-in tourists, motor scooter enthusiasts, and
+                cruise-based touring groups and partnerships. We have two rental locations on Cozumel. In el Centro de
+                Cozumel, we are located by the Playa del Carmen-Cozumel Ferry dock. Our second location is located along
+                the coast, near the Terminal Puerta Maya, for all our visitors that come by cruise.</p>
+        </section>
+
+        <div class="photo">
+            <figure>
+                <picture>
+                    <img class="hero" src="images/scooter-rental.webp" alt="A man on a scooter in Cozumel, Mexico."
+                        loading="lazy" width="500" height="375">
+                </picture>
+                <figcaption>A tourist riding a scooter in Cozumel, Mexico.</figcaption>
+            </figure>
+        </div>
+
+        <section class="rental-summary">
+            <p>Here at Scoots Rentals, your premier destination for all your rental needs in Cozumel, Mexico,
+                explore our wide range of vehicles designed to make your island adventure unforgettable.</p>
+            <p><strong>1. Honda Metropolitan 49cc Scooter:</strong> Perfect for zipping around the island with ease, our
+                Honda Metropolitan
+                scooters offer convenience and style. Ideal for solo explorers or couples looking for a fun and
+                efficient way to get around.</p>
+            <p><strong>2. Honda Dio 110cc Scooter:</strong> Step up your scooter game with our Honda Dio models. With a
+                bit more power, these scooters are great for longer excursions or for those who prefer a bit more speed
+                and agility.</p>
+            <p><strong>3. Honda PCX150 149cc Scooter:</strong> Experience ultimate freedom with our Honda PCX150
+                scooters. Whether you're
+                cruising along the coastline or venturing into the heart of the island, these scooters offer a smooth
+                and reliable ride for all your adventures.</p>
+            <p><strong>4. Honda Pioneer 1000 ATV:</strong> For off-road enthusiasts, our Honda Pioneer 1000 ATV is the
+                perfect choice.
+                Conquer rugged terrain and explore Cozumel's hidden gems with ease and confidence.</p>
+            <p><strong>5. Jeep Wrangler 4 Door:</strong> Take your island exploration to the next level with our
+                spacious Jeep Wrangler 4
+                Door. Whether you're traveling with family or friends, these rugged vehicles offer comfort and
+                versatility for any adventure.</p>
+            <p><strong>6. Jeep Wrangler Open-Air 2 Door:</strong> Feel the wind in your hair as you cruise around
+                Cozumel in our Jeep Wrangler Open-Air 2 Door models. Perfect for couples or solo travelers seeking the
+                thrill of an open-air driving experience.</p>
+            <p>At Cozumel Rentals, we pride ourselves on providing top-quality vehicles and exceptional service to
+                ensure your vacation is everything you dreamed of and more. Book your rental today and start exploring
+                all that Cozumel has to offer!</p>
+
+        </section>
+        <button id="reserveButton" onclick="document.location='reservations.html'">Reserve Now!</button>
+        <hr>
+
+        <section id="weather">
+            <h2>Current Temperature</h2>
+            <div id="current-weather">
+                <p><span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="https://via.placeholder.com/55" alt="Today's Weather Conditions">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="windspeed"></span></p>
+            </div>
+            <h4>Weather Forecast</h4>
+            <div id="weather-forecast"></div>
+        </section>
+        <div id="address">
+            <h4>Contact Us!</h4>
+            <address>
+                <p>Scoots Rentals</p>
+                <p>77300 Maria Ave.</p>
+                <p>El Centro, Cozumel</p>
+                <p>+52 987 295 0932</p>
+                <p>ScootsContact@gmail.com</p>
+            </address>
+            <address>
+                <p>Scoots Rentals</p>
+                <p>77647 Pier St.</p>
+                <p>Terminal, Cozumel</p>
+                <p>+52 987 593 2957</p>
+                <p>ScootsContact@gmail.com</p>
+            </address>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div id="copyright">
+            <p>&copy;<span id="year"></span> | Sydney Bohl</p>
+        </div>
+        <div id="project">
+            <p>WDD 230 Project</p>
+            <a href="links.html">References</a>
+        </div>
+        <div id="lastMod">
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hambutton.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/forecast.js"></script>
+
+</body>
+
+</html>

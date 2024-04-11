@@ -1,0 +1,52 @@
+@media screen and (min-width: 800px) {
+    .logo {
+        width: 100%;
+        max-width: 175px;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 1.6em;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        padding: .3em;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #address {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    #address h4 {
+        grid-column: 1/3;
+    }
+
+    table {
+        font-size: 1.4em;
+    }
+
+    #map {
+        display: flex;
+        grid-gap: 20px;
+    }
+
+    #location {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

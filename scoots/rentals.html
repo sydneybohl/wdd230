@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Scoots Final Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sydneybohl.github.io/wdd230/scoots/images/scooter-rental.webp">
+    <meta property="og:url" content="https://sydneybohl.github.io/wdd230/scoots/index.html">
+
+    <meta name="author" content="Sydney Bohl">
+    <meta name="description" content="Scoots, a rental shop in Cozumel, Mexico.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <title>WDD 230 | Scoots: Rentals | Sydney Bohl</title>
+</head>
+
+<body>
+    <header>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a id="logo-link" href="index.html">
+                <img class="logo" src="images/scoots-logo.png" alt="Scoots Logo">
+            </a>
+            <a href="index.html">Home</a>
+            <a href="rentals.html" class="active">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Rentals</h1>
+        <hr>
+        <table id="rental-table">
+            <thead>
+                <tr>
+                    <th colspan="2"></th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th>Half Day<br>(3 hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day<br>(3 hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Table body will be populated dynamically -->
+            </tbody>
+        </table>
+
+        <div class="rentals">
+            <div class="metro">
+                <picture>
+                    <source srcset="images/metropolitan.webp">
+                    <img src="images/metropolitan.webp" alt="Honda Metropolitan 49cc Scooter (1 person) Photo"
+                        loading="lazy" width="300" height="225">
+                </picture>
+                <h2>Honda Metropolitan 49cc Scooter (1 person)</h2>
+                <p>Experience the freedom of zipping around Cozumel on our Honda Metropolitan scooter, perfect for solo
+                    adventurers seeking an unforgettable journey through this tropical paradise. With its lightweight
+                    design and fuel-efficient engine, navigating the island's streets is a breeze, allowing you to
+                    uncover hidden gems with ease. Enjoy the comfort of its ergonomic seat and ample under-seat storage
+                    for your belongings. With a sleek, modern design, this scooter is sure to turn heads as you cruise
+                    along the coast.</p>
+            </div>
+            <div class="dio">
+                <picture>
+                    <source srcset="images/honda-dio.webp">
+                    <img src="images/honda-dio.webp" alt="Honda Dio 110cc Scooter (2 person) Photo" loading="lazy"
+                        width="300" height="225">
+                </picture>
+                <h2>Honda Dio 110cc Scooter (2 person)</h2>
+                <p>Discover the thrill of exploring Cozumel aboard our Honda Dio 110cc Scooter, perfect for couples or
+                    friends looking to share an adventure together. With its powerful 110cc engine, this scooter offers
+                    a dynamic ride, allowing you to effortlessly navigate the island's diverse terrain. Enjoy the
+                    convenience of seating for two, making it ideal for exploring with a companion. Equipped with
+                    spacious under-seat storage, you can pack everything you need for a day of exploration. The Honda
+                    Dio's sleek and modern design ensures you'll ride in style as you discover all that Cozumel has to
+                    offer.</p>
+            </div>
+            <div class="pcx">
+                <picture>
+                    <source srcset="images/hondapcx.webp">
+                    <img src="images/hondapcx.webp" alt="Honda PCX150 149cc Scooter (2 person) Photo" loading="lazy"
+                        width="300" height="225">
+                </picture>
+                <h2>Honda PCX150 149cc Scooter (2 person)</h2>
+                <p>Embark on a journey of exploration and adventure with our Honda PCX150 (149cc) scooter, the perfect
+                    choice for couples or friends seeking a thrilling ride through Cozumel's stunning landscapes. With
+                    its powerful 149cc engine, this scooter offers smooth acceleration and excellent performance,
+                    ensuring an exhilarating experience on the road. Designed to comfortably accommodate two riders, you
+                    and your companion can enjoy the freedom of exploring the island together in style and comfort.
+                    Featuring ample storage space under the seat, you can easily pack your essentials for a day of
+                    exploration without any hassle.</p>
+            </div>
+            <div class="pioneer">
+                <picture>
+                    <source srcset="images/honda-1000.webp">
+                    <img src="images/honda-1000.webp" alt="Honda Pioneer 1000 ATV (4 person) Photo" loading="lazy"
+                        width="300" height="198">
+                </picture>
+                <h2>Honda Pioneer 1000 ATV (4 person)</h2>
+                <p>Experience the ultimate off-road adventure with our Honda Pioneer 1000 ATV, designed to accommodate
+                    up to four thrill-seekers looking to conquer Cozumel's rugged terrain. With its powerful engine and
+                    rugged construction, this ATV is built to handle the toughest trails with ease, providing an
+                    adrenaline-fueled ride like no other. Whether you're exploring remote jungle paths or traversing
+                    rocky hillsides, the Honda Pioneer 1000 offers unmatched stability and control, ensuring a safe and
+                    exhilarating experience for you and your companions. Equipped with spacious seating for four and
+                    ample cargo space, you can bring along everything you need for a day of exploration and excitement.
+                </p>
+            </div>
+            <div class="fourdoor">
+                <picture>
+                    <source srcset="images/jeep-fourdoor.webp">
+                    <img src="images/jeep-fourdoor.webp" alt="Jeep Wrangler 4 Door (5 person) Photo" loading="lazy"
+                        width="300" height="225">
+                </picture>
+                <h2>Jeep Wrangler 4 Door (5 person)</h2>
+                <p>Unleash your sense of adventure with our Jeep Wrangler, 4 door, manual, with A/C, the perfect vehicle
+                    for exploring Cozumel's diverse landscapes with friends and family. With its rugged yet refined
+                    design, this iconic vehicle offers the ultimate combination of off-road capability and on-road
+                    comfort. Equipped with a manual transmission for a more engaging driving experience and air
+                    conditioning to keep you cool in the tropical heat, the Jeep Wrangler ensures that every journey is
+                    both thrilling and comfortable. With seating for up to five passengers, there's plenty of room for
+                    everyone to join in on the adventure. Whether you're cruising along scenic coastal roads or tackling
+                    challenging off-road trails, the Jeep Wrangler is ready to take you wherever your sense of
+                    exploration leads.</p>
+            </div>
+            <div class="twodoor">
+                <picture>
+                    <source srcset="images/jeep-openair.webp">
+                    <img src="images/jeep-openair.webp" alt="Jeep Wrangler Open-Air 2 Door (4 person) Photo"
+                        loading="lazy" width="300" height="200">
+                </picture>
+                <h2>Jeep Wrangler Open-Air 2 Door (4 person)</h2>
+                <p>Experience the exhilaration of open-air adventure with our Jeep Wrangler - 2 door manual, designed
+                    for up to four adventurers ready to explore Cozumel's scenic wonders. Feel the wind in your hair and
+                    the sun on your face as you traverse the island's rugged terrain in this iconic vehicle. With its
+                    manual transmission, you're in complete control of the driving experience, while the compact 2-door
+                    design ensures agility and maneuverability on any terrain. Whether you're cruising along sandy
+                    beaches or conquering rocky trails, the Jeep Wrangler offers unmatched versatility and excitement
+                    for you and your companions.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="copyright">
+            <p>&copy;<span id="year"></span> | Sydney Bohl</p>
+        </div>
+        <div id="project">
+            <p>WDD 230 Project</p>
+            <a href="links.html">References</a>
+        </div>
+        <div id="lastMod">
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hambutton.js"></script>
+    <script src="scripts/table.js"></script>
+</body>
+
+</html>

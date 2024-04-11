@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Scoots Final Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sydneybohl.github.io/wdd230/scoots/images/scooter-rental.webp">
+    <meta property="og:url" content="https://sydneybohl.github.io/wdd230/scoots/index.html">
+
+    <meta name="author" content="Sydney Bohl">
+    <meta name="description" content="Scoots, a rental shop in Cozumel, Mexico.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <title>WDD 230 | Scoots: Contact Us | Sydney Bohl</title>
+</head>
+
+<body>
+    <header>
+
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a id="logo-link" href="index.html">
+                <img class="logo" src="images/scoots-logo.png" alt="Scoots Logo">
+            </a>
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contactus.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us!</h1>
+        <hr>
+        <div>
+            <h3>Send Us a Message!</h3>
+            <form id="contactus" method="get" action="thankyou.html">
+                <fieldset>
+                    <label for="name">Name* <input type="text" id="name" name="name" required
+                            title="Please enter your first and last name."></label>
+                    <label for="email">Email* <input type="email" id="email" name="email" required
+                            placeholder="someone@email.com" title="Please enter a valid email address."></label>
+                    <label for="textarea">Comments:</label>
+                    <textarea name="message" id="message" rows="3" cols="50"></textarea>
+
+                    <input type="hidden" name="time-stamp" id="timestamp">
+                    <input type="submit" value="Send The Message" class="submitButton">
+                </fieldset>
+            </form>
+        </div>
+        <div id="address">
+            <address>
+                <p>Scoots Rentals</p>
+                <p>77300 Maria Ave.</p>
+                <p>El Centro, Cozumel</p>
+                <p>+52 987 295 0932</p>
+                <p>ScootsContact@gmail.com</p>
+            </address>
+            <address>
+                <p>Scoots Rentals</p>
+                <p>77647 Pier St.</p>
+                <p>Terminal, Cozumel</p>
+                <p>+52 987 593 2957</p>
+                <p>ScootsContact@gmail.com</p>
+            </address>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+        <div id="location">
+            <h3>Our El Centro Location:</h3>
+            <h3>Our Terminal Location:</h3>
+        </div>
+
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14948.252233059786!2d-86.9493631512294!3d20.50364110135075!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1712760743987!5m2!1sen!2sus"
+                width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3737.636916537045!2d-86.97443000495016!3d20.480100708551618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1712760889531!5m2!1sen!2sus"
+                width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </main>
+    <footer>
+        <div id="copyright">
+            <p>&copy;<span id="year"></span> | Sydney Bohl</p>
+        </div>
+        <div id="project">
+            <p>WDD 230 Project</p>
+            <a href="links.html">References</a>
+        </div>
+        <div id="lastMod">
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/hambutton.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>

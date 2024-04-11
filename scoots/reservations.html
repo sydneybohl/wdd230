@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Scoots Final Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sydneybohl.github.io/wdd230/scoots/images/scooter-rental.webp">
+    <meta property="og:url" content="https://sydneybohl.github.io/wdd230/scoots/index.html">
+
+    <meta name="author" content="Sydney Bohl">
+    <meta name="description" content="Scoots, a rental shop in Cozumel, Mexico.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <title>WDD 230 | Scoots: Reservations | Sydney Bohl</title>
+</head>
+
+<body>
+    <header>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a id="logo-link" href="index.html">
+                <img class="logo" src="images/scoots-logo.png" alt="Scoots Logo">
+            </a>
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html" class="active">Reservations</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Reservations</h1>
+        <hr>
+        <section id="rental-agreement">
+            <h2>Rental Services and Agreements</h2>
+            <div>
+                <p>A $50 security deposit to confirm reservations.</p>
+                <p>A valid drivers license is required in hand at the tim eof rental.</p>
+                <p>No one under the age of 12 years of age are allowed to ride on the scooters.</p>
+                <p>Fuel charge is not included.</p>
+                <p>Unlimited mileage.</p>
+                <p>Liability insurance is included.</p>
+                <p>Damage insurance is available for purchase.</p>
+                <p>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+                <p>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</p>
+                <p>Rentals may be returned to either physical location.</p>
+            </div>
+        </section>
+        <hr>
+        <form method="get" action="thankyou.html" class="reservations">
+            <fieldset class="info">
+                <legend>Reservation Information</legend>
+                <label for="firstName">First Name*<input type="text" id="firstName" name="firstName" required
+                        title="Enter your first name."></label>
+                <label for="lastName">Last Name* <input type="text" id="lastName" name="lastName" required
+                        title="Enter your last name."></label>
+                <label for="phoneNumber">Mobile Phone* <input type="tel" id="phoneNumber" name="phone" required
+                        title="A valid phone number."></label>
+                <label for="email">Email* <input type="email" id="email" name="email" placeholder="someone@email.com"
+                        required title="Enter a valid email address."></label>
+                <label for="stateCountry">Home State or Country*
+                    <input type="text" id="stateCountry" name="stateCountry" required></label>
+
+            </fieldset>
+            <fieldset class="info">
+                <legend>Rental Type</legend>
+                <label class="sbs"><input type="radio" name="vehicle" value="Honda Metro" required> Honda Metropolitan
+                    Scooter (1 person)
+                </label>
+                <label class="sbs"><input type="radio" name="vehicle" value="Honda Dio" required> Honda Dio
+                    Scooter (2 person)
+                </label>
+                <label class="sbs"><input type="radio" name="vehicle" value="Honda PCX150"> Honda PCX150
+                    Scooter (2 person)
+                </label>
+                <label class="sbs"><input type="radio" name="vehicle" value="Honda Pioneer 1000"> Honda Pioneer
+                    1000 ATV (4 person)
+                </label>
+                <label class="sbs"><input type="radio" name="vehicle" value="Jeep Wrangler 2-Door"> Jeep Wrangler
+                    Open-Air 2 Door Manual (4 person)
+                </label>
+                <label class="sbs"><input type="radio" name="vehicle" value="Jeep Wrangler 4-Door">Jeep Wrangler 4 Door
+                    Manual (5 person)(w/ A/C)
+                </label>
+            </fieldset>
+            <fieldset class="info">
+                <legend>Rental Dates</legend>
+                <label for="departureDate">Departure Date* </label>
+                <input type="date" id="departureDate" name="departureDate" required>
+                <label for="returnDate">Return Date* </label>
+                <input type="date" id="returnDate" name="returnDate" required>
+            </fieldset>
+            <fieldset class="info">
+                <legend>Special Accommodations/Comments</legend>
+                <label for="comments">Comments: </label>
+                <textarea id="comments" name="comments"
+                    placeholder="Enter any special accommodations needed or comments."></textarea>
+            </fieldset>
+            <fieldset class="info">
+                <legend>For Cruise Passengers:</legend>
+                <label for="cruise">Enter Cruise Line:<input type="text" id="cruise" name="cruise"> </label>
+            </fieldset>
+
+
+            <fieldset class="info">
+                <legend>Rental Agreement</legend>
+                <div id="rental">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agree">I understand the rental services and agreement
+                        requirements.</label>
+                </div>
+            </fieldset>
+            <fieldset class="info">
+                <legend>Payment Method</legend>
+                <label for="payment">Select Payment Method*</label>
+                <select id="payment" name="payment" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="debit">Debit Card</option>
+                    <option value="venmo">Venmo</option>
+                    <option value="apple">Apple Pay</option>
+                    <option value="google">Google Pay</option>
+                </select>
+            </fieldset>
+
+            <input type="hidden" name="time-stamp" id="timestamp">
+
+            <input type="submit" value="Complete My Reservation!" id="reserveButton">
+        </form>
+
+    </main>
+    <footer>
+        <div id="copyright">
+            <p>&copy;<span id="year"></span> | Sydney Bohl</p>
+        </div>
+        <div id="project">
+            <p>WDD 230 Project</p>
+            <a href="links.html">References</a>
+        </div>
+        <div id="lastMod">
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/hambutton.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>

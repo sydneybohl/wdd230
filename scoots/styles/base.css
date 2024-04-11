@@ -192,6 +192,11 @@ footer {
     border-radius: 10px;
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
 table,
 td,
 th {
